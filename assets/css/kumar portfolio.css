@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none !important;
+  }
+/*-------Nav bar starts--------*/
+nav{
+    background-color: #3954ec ;
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+label.logo span{
+font-weight: normal;
+color:rgb(235, 227, 115);
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+}
+a:hover{
+    background-color: white;
+    color: black;
+    padding: 2px;
+    transition: .3s;   
+}
+.checkbtn{
+    font-size: 30px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px) {
+    label.logo{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width:852px ) {
+    label.logo{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 150px;
+        height: 100vh;
+        background: #228ec1;;
+        top: 80px;
+        left: -100%;
+        text-align:center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .heading_text ,.head_image{
+        margin-top: 0px;
+       }
+}
+/*-------Nav bar Ends--------*/
+
+.main_Content{
+    background: rgb(32,83,231);
+    background: linear-gradient(336deg, rgba(32,83,231,1) 0%, rgba(21,146,233,1) 66%, rgba(57,105,235,1) 100%);
+    padding-top: 13%;
+    padding-bottom: 5%;
+}
+
+.text1{
+    color:rgb(204, 250, 1);
+    font-size: 60px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+.text2{
+    color: aquamarine;
+    font-size: 60px;
+    font-family: 'Poppins';
+    line-height: 50px;
+}
+.text2 span{
+    color: white;
+    font-size: 40px;
+}
+.ddddd{
+    width: 100%;
+    padding-top: 10%;
+}/*
+.main_Content:hover{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%);
+}*/
+/*---------Services----------*/
+.Services{
+    text-align: center;
+    color: rgb(241, 243, 245);
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.cardss{
+    width: 300px;
+    height: 29  0px;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    margin: 5px;
+    margin-bottom: 25%;
+}
+.Respons{
+    text-align: center;
+    padding: 7px;
+    color: rgb(15, 15, 15);
+    font-family: 'Poppins';
+    font-weight:800;
+}
+.aaaa{
+    width: 230px;
+    height: 230px;
+    margin-left: 30px;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.cardss:hover{
+    box-shadow: 3px 3px 5px rgb(26, 192, 243);
+    background-color: lightgreen;
+}
+.cardss:hover .aaaa{
+    transition: 0.9s;
+      transform: rotateY(180deg);    
+}
+.abcd{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%);
+}/*
+.abcd:hover{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%);
+}*/
+/*---------About----------*/
+#aboutt{
+    background: rgb(32,83,231);
+    background: linear-gradient(336deg, rgba(32,83,231,1) 0%, rgba(21,146,233,1) 66%, rgba(57,105,235,1) 100%);
+
+}
+.About{
+    text-align: center;
+    font-family: 'Poppins';
+    padding-top: 6%;
+    color: yellow;
+    font-weight: bold;
+}
+.para{
+    font-size:23px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    color: white;
+    font-family: 'Poppins';
+    text-indent: 5%;
+}/*
+#aboutt:hover{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%);
+}
+#aboutt:hover .About{
+    color: yellow;
+}*/
+.bttnn{
+    align-items: center;
+}
+
+/*---------My Skills----------*/
+
+#Skills{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%);
+    
+}
+.mySkills{
+    text-align: center;
+    font-family: 'Poppins';
+    color: rgb(250, 250, 248);
+    font-weight: bold;
+    padding-top: 3%;
+    padding-top: 3%;
+}
+.progresss h3{
+    font-family: 'Poppins';
+    color: rgb(250, 250, 253);
+    font-weight: normal;
+    padding-top: 30px;
+}
+.mySkilss{
+    padding-bottom: 3%;
+}
+/*---------My Projects----------*/
+#Projects{
+    background: linear-gradient(336deg, rgba(32,83,231,1) 0%, rgba(21,146,233,1) 66%, rgba(57,105,235,1) 100%);
+}
+.Projectss{
+    padding-top: 2%;
+    padding-bottom: 15%;
+}
+.MyProjects{
+    text-align: center;
+    font-family: 'Poppins';
+    color: yellow;
+    font-weight: bold;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+.cardin{
+    width: 300px;
+    height: 150px;
+    background: rgb(252, 250, 250);
+    border-radius: 8px;
+}
+.imgg{
+    width: 288px;
+    height: 102px;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+
+
+/*---------contact me----------*/
+
+#Contact{
+    background: rgb(32,32,32);
+    background: linear-gradient(336deg, rgba(32,32,32,1) 0%, rgba(20,20,22,1) 66%, rgba(67,68,67,1) 100%); 
+}
+.Contactme{
+    text-align: center;
+    font-family: 'Poppins';
+    padding-top: 2%;
+    color: yellow;
+    font-weight: bold;
+}
+.detailss {
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.detailss li:not(span){
+    font-size: 30px;
+    font-family: 'Poppins';
+    color: white;
+    margin: 1%;
+    padding-left: 1%;
+    
+}
+.detailss li span{  
+    background: white;
+    color: black;
+    border-radius: 60px;
+    font-size: 35px;
+}
+
+/*---------footer----------*/
+#footer{
+    background: rgb(12, 31, 90);
+    background: linear-gradient(336deg, rgba(32,83,231,1) 0%, rgba(21,146,233,1) 66%, rgba(57,105,235,1) 100%);
+    margin-bottom: -3%;
+}
+.foott p{
+color: white;
+text-align: center;
+}
+.text12{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.text12 span{
+    color: yellow;
+}
+.text13{
+    padding-top: -10px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding-bottom:15px;
+}
+/*-------Mouse trail-----------*/
+.trail { /* className for the trail elements */
+    position: absolute;
+    height:10px; width: 20px;
+    border-radius: 50px;
+    background: rgb(4, 90, 69);
+    border: 1px solid rgb(243, 243, 9);
+ 
+  }
+
+  .typing:before{
+    content: '';
+    animation: animate infinite 12s;
+  }
+  @keyframes animate{
+      0%{
+          content: 'Web-Developer';
+      }
+      20%{
+          content: 'Front-End Developer';
+      }
+      40%{
+          content: 'UI-Designer';
+      }
+      60%{
+          content: 'UI/UX developer';
+      }
+      80%{
+          content: 'Web-Designer';
+      }
+      100%{
+          content: 'Back-End Developer';
+      }
+  }
+
+
+
+ 
